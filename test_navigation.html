@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Test - AI Prompting Course</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .test-link {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 10px 15px;
+            background: #007cba;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .test-link:hover {
+            background: #005a87;
+        }
+        .status {
+            margin-top: 10px;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        .success { background: #d4edda; color: #155724; }
+        .warning { background: #fff3cd; color: #856404; }
+        h1 { color: #333; text-align: center; }
+        h2 { color: #555; border-bottom: 2px solid #eee; padding-bottom: 5px; }
+        .clear-btn {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="test-container">
+    <h1>🧪 Navigation & Cookie Test</h1>
+
+    <div class="test-section">
+        <h2>📄 Page Navigation Tests</h2>
+        <p>Test all page links to ensure they work properly:</p>
+
+        <a href="landing_page_course.html" class="test-link">🏠 Landing Page</a>
+        <a href="privacy.html" class="test-link">🛡️ Privacy Policy</a>
+        <a href="terms.html" class="test-link">📋 Terms of Service</a>
+
+        <div class="status success">
+            ✅ All pages should open and display correctly
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>🍪 Cookie Banner Tests</h2>
+        <p>Test cookie consent functionality:</p>
+
+        <button class="clear-btn" onclick="localStorage.clear(); alert('LocalStorage cleared! Refresh page to see cookie banner.'); location.reload();">
+            Clear Cookies & Reload
+        </button>
+
+        <div class="status warning">
+            ⚠️ Expected behavior:
+            <ul>
+                <li>Cookie banner should appear at bottom</li>
+                <li>Two buttons: "אישור כל העוגיות" and "עוגיות חיוניות בלבד"</li>
+                <li>Link to privacy policy should work</li>
+                <li>Banner should disappear after clicking either button</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>🔧 Footer Link Tests</h2>
+        <p>The landing page footer should contain two new buttons:</p>
+
+        <div class="status success">
+            ✅ Check that the footer contains:
+            <ul>
+                <li>🛡️ "מדיניות פרטיות" button</li>
+                <li>📋 "תקנון שימוש" button</li>
+                <li>Both should be styled as gray buttons with icons</li>
+                <li>Both should open their respective pages</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>📱 Responsive Design Test</h2>
+        <p>Test responsiveness:</p>
+
+        <div class="status warning">
+            ⚠️ Resize browser window to test:
+            <ul>
+                <li>Mobile view (< 768px)</li>
+                <li>Tablet view (768px - 1024px)</li>
+                <li>Desktop view (> 1024px)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>🔍 SEO & Accessibility Tests</h2>
+        <p>Verify new features:</p>
+
+        <div class="status success">
+            ✅ Features added:
+            <ul>
+                <li>Skip to content link (Press Tab on keyboard)</li>
+                <li>ARIA labels for navigation</li>
+                <li>Open Graph meta tags</li>
+                <li>Twitter Card meta tags</li>
+                <li>Canonical URL</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<script>
+// Display current localStorage status
+window.onload = function() {
+    console.log('🔍 Current localStorage status:');
+    console.log('cookiesAccepted:', localStorage.getItem('cookiesAccepted'));
+
+    // Check if cookies.js is loaded
+    if (typeof initCookieConsent === 'function') {
+        console.log('✅ cookies.js loaded successfully');
+    } else {
+        console.log('❌ cookies.js not loaded');
+    }
+}
+</script>
+
+</body>
+</html>

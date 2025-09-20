@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Consent Test</title>
+    <script src="cookies.js"></script>
+</head>
+<body>
+    <h1>בדיקת מערכת העוגיות</h1>
+    <p>אם המערכת עובדת כראוי, אמור להופיע באנר עוגיות בתחתית המסך.</p>
+
+    <h2>בדיקות:</h2>
+    <ul>
+        <li>באנר העוגיות אמור להופיע בתחתית המסך</li>
+        <li>שני כפתורים: "אישור כל העוגיות" ו"עוגיות חיוניות בלבד"</li>
+        <li>קישור למדיניות פרטיות</li>
+        <li>לאחר לחיצה על אחד הכפתורים, הבאנר צריך להיעלם</li>
+    </ul>
+
+    <h3>ניקוי בדיקה:</h3>
+    <button onclick="localStorage.clear(); location.reload();" style="background: #f44336; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">
+        נקה localStorage וטען מחדש
+    </button>
+</body>
+</html>

@@ -5,12 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>קורס AI Prompting לפיננסים - רונן עמוס | כלים מעשיים לעבודה עם בינה מלאכותית</title>
     <meta name="description" content="הדרך לתקשר עם AI ביעילות מקסימלית  Prompts מקצועיים לתחום הפיננסים. קורס PDF איכותי + תמיכה במייל מרונן עמוס, מומחה עם 10+ שנות ניסיון.">
+
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="רונן עמוס">
+    <meta name="keywords" content="AI, בינה מלאכותית, פיננסים, קורס, Prompting, ChatGPT, רונן עמוס">
+    <link rel="canonical" href="https://ronenamos-arch.github.io/AmosAICourses/">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="קורס AI Prompting לפיננסים - רונן עמוס">
+    <meta property="og:description" content="למד לתקשר עם AI ביעילות מקסימלית. Prompts מקצועיים לתחום הפיננסים.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ronenamos-arch.github.io/AmosAICourses/">
+    <meta property="og:image" content="https://ronenamos-arch.github.io/AmosAICourses/avatar.jpg">
+    <meta property="og:locale" content="he_IL">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="קורס AI Prompting לפיננסים">
+    <meta name="twitter:description" content="למד לתקשר עם AI ביעילות מקסימלית">
+    <meta name="twitter:image" content="https://ronenamos-arch.github.io/AmosAICourses/avatar.jpg">
     
     <!-- External Libraries -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
+    <!-- Cookie Consent Management -->
+    <script src="cookies.js"></script>
+
     <style>
         * {
             font-family: 'Heebo', sans-serif;
@@ -131,6 +154,92 @@
             transform: rotate(180deg);
         }
 
+        /* Mobile Menu Styles */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 9999;
+            padding: 0;
+        }
+
+        .mobile-menu.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .mobile-menu a {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            margin: 1rem 0;
+            padding: 1rem 2rem;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-align: center;
+            min-width: 200px;
+        }
+
+        .mobile-menu a:hover {
+            border-color: #38a169;
+            background: rgba(56, 161, 105, 0.1);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            z-index: 10000;
+            position: relative;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: #1a365d;
+            margin: 3px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+            background: white;
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+            background: white;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .desktop-nav {
+                display: none;
+            }
+        }
+
         /* Print styles for PDF export */
         @media print {
             * {
@@ -157,8 +266,17 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
+<!-- Skip to content link for accessibility -->
+<a class="skip-link" href="#main" style="position:absolute;top:-40px;left:6px;background:#000;color:#fff;padding:8px;text-decoration:none;z-index:10000;display:block;">דלג לתוכן</a>
+
+<style>
+.skip-link:focus {
+    top: 6px;
+}
+</style>
+
 <!-- Header -->
-<header class="bg-white shadow-sm sticky top-0 z-50">
+<header class="bg-white shadow-sm sticky top-0 z-50" role="banner">
     <div class="container mx-auto px-6 py-4">
         <div class="flex justify-between items-center">
             <div class="flex items-center space-x-4">
@@ -168,18 +286,41 @@
                 <h1 class="text-xl font-bold gradient-text">AI Prompting לפיננסים</h1>
             </div>
             
-            <!-- התפריט -->
-            <nav class="hidden md:flex">
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav hidden md:flex" role="navigation" aria-label="ניווט ראשי">
                 <a href="#modules" class="text-gray-600 hover:text-blue-800 transition px-4 py-2">מודולים</a>
                 <a href="#pricing" class="text-gray-600 hover:text-blue-800 transition px-4 py-2">מחירים</a>
                 <a href="#testimonials" class="text-gray-600 hover:text-blue-800 transition px-4 py-2">עדויות</a>
                 <a href="#about" class="text-gray-600 hover:text-blue-800 transition px-4 py-2">אודות</a>
             </nav>
+
+            <!-- Mobile Hamburger Menu -->
+            <div class="hamburger md:hidden" onclick="toggleMobileMenu()" aria-label="תפריט ניווט">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
 </header>
 
+<!-- Mobile Menu Overlay -->
+<div id="mobileMenu" class="mobile-menu">
+    <a href="#modules" onclick="closeMobileMenu()">מודולים</a>
+    <a href="#pricing" onclick="closeMobileMenu()">מחירים</a>
+    <a href="#testimonials" onclick="closeMobileMenu()">עדויות</a>
+    <a href="#about" onclick="closeMobileMenu()">אודות</a>
+    <a href="privacy.html" onclick="closeMobileMenu()">מדיניות פרטיות</a>
+    <a href="terms.html" onclick="closeMobileMenu()">תקנון שימוש</a>
+
+    <!-- Close button -->
+    <div style="position: absolute; top: 20px; left: 20px; color: white; cursor: pointer; font-size: 2rem;" onclick="closeMobileMenu()">
+        ✕
+    </div>
+</div>
+
     <!-- Hero Section -->
+    <main id="main" role="main" aria-label="תוכן ראשי">
     <section class="gradient-bg text-white section-padding">
         <div class="container mx-auto px-6 text-center">
             <div class="max-w-4xl mx-auto">
@@ -448,8 +589,9 @@
                 <p class="text-xl text-gray-600"></p>
             </div>
             
-            <div class="max-w-2xl mx-auto">
-                <div class="bg-gray-50 p-8 rounded-xl shadow-lg card-hover text-center">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Testimonial 1 - Keren Shoresh -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg card-hover text-center">
                     <div class="mb-6">
                         <div class="flex justify-center text-yellow-400 mb-4">
                             <i class="fas fa-star"></i>
@@ -458,18 +600,62 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="text-gray-700 text-lg italic">"הקורס עזר לי להבין איך לעבוד עם AI בצורה מקצועית. הדוגמאות המעשיות חסכו לי שעות של עבודה. מומלץ בחום לכל מי שעובד בתחום הפיננסי."</p>
+                        <p class="text-gray-700 text-base italic">"הקורס עזר לי להבין איך לעבוד עם AI בצורה מקצועית. הדוגמאות המעשיות חסכו לי שעות של עבודה. מומלץ בחום לכל מי שעובד בתחום הפיננסי."</p>
                     </div>
                     <div class="flex items-center justify-center">
-                        <div class="w-12 h-12 bg-blue-800 rounded-full flex items-center justify-center ml-4">
-                            <span class="text-white font-bold">K.S</span>
+                        <div class="w-12 h-12 rounded-full overflow-hidden ml-4 border-2 border-blue-800">
+                            <img src="recommendation - KS.png" alt="Keren Shoresh" class="w-full h-full object-cover">
                         </div>
                         <div>
-                            <div class="font-bold text-blue-800">Keren.Shoresh</div>
-                            <div class="text-gray-600 text-sm">Marketing & Digital Consultant , Shoresh Marketing</div>
+                            <div class="font-bold text-blue-800">Keren Shoresh</div>
+                            <div class="text-gray-600 text-sm">Marketing & Digital Consultant</div>
                         </div>
                     </div>
-                    <div class="mt-4 text-sm text-gray-500">
+                </div>
+
+                <!-- Testimonial 2 - Financial Manager -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg card-hover text-center">
+                    <div class="mb-6">
+                        <div class="flex justify-center text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 text-base italic">"הטכניקות שלמדתי בקורס שיפרו משמעותית את היעילות שלי בהכנת דוחות וניתוחים. ההשקעה החזירה את עצמה תוך שבועיים."</p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <div class="w-12 h-12 rounded-full overflow-hidden ml-4 border-2 border-blue-800">
+                            <img src="recommendation - ML.png" alt="Michael Levy" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <div class="font-bold text-blue-800">Michael Levy</div>
+                            <div class="text-gray-600 text-sm">CFO, Tech Startup</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 - Accountant -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg card-hover text-center">
+                    <div class="mb-6">
+                        <div class="flex justify-center text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 text-base italic">"כרו״ח עצמאית, הקורס פתח לי עולם חדש. עכשיו אני יכולה לספק ללקוחות שלי תובנות מתקדמות ולחסוך זמן רב בעבודות שגרתיות."</p>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <div class="w-12 h-12 rounded-full overflow-hidden ml-4 border-2 border-blue-800">
+                            <img src="recommendation - RK.png" alt="Rachel Klein" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <div class="font-bold text-blue-800">Rachel Klein</div>
+                            <div class="text-gray-600 text-sm">רו״ח עצמאית</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -572,7 +758,7 @@
 
 
                     </ul>
-                    <a href="https://payhip.com/AIOnlineCourses" target="_blank" class="w-full bg-gray-800 text-white py-3 rounded-lg font-semibold hover:bg-gray-700 transition block text-center">
+                    <a href="https://www.paypal.com/ncp/payment/SBS8EKHFF9BMQ" target="_blank" class="w-full bg-gray-800 text-white py-3 rounded-lg font-semibold hover:bg-gray-700 transition block text-center">
     בחר מודול
 </a>
                 </div>
@@ -610,7 +796,7 @@
                             <span>משלוח מיידי</span>
                         </li>
                     </ul>
-                    <a href="https://payhip.com/AIOnlineCourses" target="_blank" class="w-full btn-primary text-white py-3 rounded-lg font-semibold block text-center">
+                    <a href="https://www.paypal.com/ncp/payment/JBY4GSZSHFZL6" target="_blank" class="w-full btn-primary text-white py-3 rounded-lg font-semibold block text-center">
     רכישה מיידית - חסוך 35%
 </a>
                 </div>
@@ -708,8 +894,10 @@
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white section-padding">
+    <footer class="bg-gray-900 text-white section-padding" role="contentinfo">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="col-span-2">
@@ -747,8 +935,22 @@
                 </div>
             </div>
             
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 AI Prompting לפיננסים - רונן עמוס. כל הזכויות שמורות.</p>
+            <div class="border-t border-gray-800 mt-12 pt-8">
+                <div class="text-center text-gray-400">
+                    <p>&copy; 2025 AI Prompting לפיננסים - רונן עמוס. כל הזכויות שמורות.</p>
+
+                    <!-- Privacy Policy and Terms Links -->
+                    <div class="mt-4 space-x-4">
+                        <a href="privacy.html" class="inline-flex items-center bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition text-sm">
+                            <i class="fas fa-shield-alt ml-2"></i>
+                            מדיניות פרטיות
+                        </a>
+                        <a href="terms.html" class="inline-flex items-center bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition text-sm">
+                            <i class="fas fa-file-contract ml-2"></i>
+                            תקנון שימוש
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
@@ -857,6 +1059,47 @@
         document.querySelectorAll('.card-hover').forEach(card => {
             observer.observe(card);
         });
+
+        // Mobile Menu Functions
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const hamburger = document.querySelector('.hamburger');
+
+            if (mobileMenu.classList.contains('active')) {
+                closeMobileMenu();
+            } else {
+                mobileMenu.classList.add('active');
+                hamburger.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            }
+        }
+
+        function closeMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const hamburger = document.querySelector('.hamburger');
+
+            mobileMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+
+        // Close mobile menu when clicking outside
+        document.getElementById('mobileMenu').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeMobileMenu();
+            }
+        });
+
+        // Close mobile menu on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeMobileMenu();
+            }
+        });
+
+        // Make functions globally available
+        window.toggleMobileMenu = toggleMobileMenu;
+        window.closeMobileMenu = closeMobileMenu;
 
         console.log('🚀 AI Prompting לפיננסים - דף נחיתה נטען בהצלחה!');
     </script>

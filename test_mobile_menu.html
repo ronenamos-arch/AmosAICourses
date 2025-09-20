@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Menu Test - AI Prompting Course</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .test-link {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 10px 15px;
+            background: #007cba;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .test-link:hover {
+            background: #005a87;
+        }
+        .status {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .success { background: #d4edda; color: #155724; }
+        .warning { background: #fff3cd; color: #856404; }
+        .info { background: #d1ecf1; color: #0c5460; }
+        h1 { color: #333; text-align: center; }
+        h2 { color: #555; border-bottom: 2px solid #eee; padding-bottom: 5px; }
+        .mobile-viewport {
+            background: #f8f9fa;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        .feature-check {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+        }
+        .check-icon {
+            color: #28a745;
+            margin-left: 8px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="test-container">
+    <h1>📱 Mobile Hamburger Menu Test</h1>
+
+    <div class="test-section">
+        <h2>🔗 Test All Pages</h2>
+        <p>Test the mobile hamburger menu on all pages:</p>
+
+        <a href="landing_page_course.html" class="test-link">🏠 Landing Page</a>
+        <a href="privacy.html" class="test-link">🛡️ Privacy Policy</a>
+        <a href="terms.html" class="test-link">📋 Terms of Service</a>
+
+        <div class="status info">
+            📱 <strong>How to test:</strong> Resize your browser to mobile width (< 768px) or use browser dev tools device emulation
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>🍔 Hamburger Menu Features</h2>
+        <p>Check these features on mobile devices:</p>
+
+        <div class="mobile-viewport">
+            <h4>Landing Page Menu Contains:</h4>
+            <div class="feature-check">
+                <span class="check-icon">✓</span>
+                <span>מודולים (Modules)</span>
+            </div>
+            <div class="feature-check">
+                <span class="check-icon">✓</span>
+                <span>מחירים (Pricing)</span>
+            </div>
+            <div class="feature-check">
+                <span class="check-icon">✓</span>
+                <span>עדויות (Testimonials)</span>
+            </div>
+            <div class="feature-check">
+                <span class="check-icon">✓</span>
+                <span>אודות (About)</span>
+            </div>
+            <div class="feature-check">
+                <span class="check-icon">✓</span>
+                <span>מדיניות פרטיות (Privacy Policy)</span>
+            </div>
+            <div class="feature-check">
+                <span class="check-icon">✓</span>
+                <span>תקנון שימוש (Terms of Service)</span>
+            </div>
+        </div>
+
+        <div class="mobile-viewport">
+            <h4>Privacy & Terms Pages Menu Contains:</h4>
+            <div class="feature-check">
+                <span class="check-icon">✓</span>
+                <span>עמוד הבית (Home Page)</span>
+            </div>
+            <div class="feature-check">
+                <span class="check-icon">✓</span>
+                <span>Cross-navigation between Privacy & Terms</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>🎯 Animation Tests</h2>
+        <p>Verify these animations work properly:</p>
+
+        <div class="status success">
+            <strong>Hamburger Icon Animations:</strong>
+            <ul>
+                <li>Three horizontal lines transform into X when clicked</li>
+                <li>Lines turn white when menu is open</li>
+                <li>Smooth rotation and fade transitions</li>
+            </ul>
+        </div>
+
+        <div class="status success">
+            <strong>Menu Overlay Animations:</strong>
+            <ul>
+                <li>Smooth fade-in when opening</li>
+                <li>Full-screen dark overlay</li>
+                <li>Menu items centered vertically</li>
+                <li>Hover effects on menu items</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>🔧 Interaction Tests</h2>
+        <p>Test these user interactions:</p>
+
+        <div class="status warning">
+            <strong>Required Behaviors:</strong>
+            <ul>
+                <li>📱 Hamburger appears only on mobile (< 768px)</li>
+                <li>🖱️ Click hamburger to open menu</li>
+                <li>❌ Click X or outside to close menu</li>
+                <li>⌨️ Press Escape key to close menu</li>
+                <li>🔗 Click any menu link closes menu and navigates</li>
+                <li>🚫 Body scrolling disabled when menu open</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>📐 Responsive Breakpoints</h2>
+        <p>Test at different screen sizes:</p>
+
+        <div class="mobile-viewport">
+            <strong>Screen Size Tests:</strong>
+            <ul>
+                <li><strong>Mobile:</strong> 320px - 767px (Hamburger visible)</li>
+                <li><strong>Tablet:</strong> 768px - 1023px (Desktop nav visible)</li>
+                <li><strong>Desktop:</strong> 1024px+ (Desktop nav visible)</li>
+            </ul>
+        </div>
+
+        <div class="status info">
+            💡 <strong>Tip:</strong> Use browser dev tools (F12) → Device Toolbar to test different screen sizes
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>🌐 Cross-Browser Testing</h2>
+        <p>Test on different browsers and devices:</p>
+
+        <div class="status warning">
+            <strong>Recommended Testing:</strong>
+            <ul>
+                <li>📱 iOS Safari (iPhone)</li>
+                <li>🤖 Chrome Mobile (Android)</li>
+                <li>💻 Desktop browsers (Chrome, Firefox, Safari, Edge)</li>
+                <li>📱 Tablet devices (iPad, Android tablets)</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<script>
+window.onload = function() {
+    console.log('📱 Mobile Menu Test Page Loaded');
+    console.log('Current viewport width:', window.innerWidth);
+    console.log('Mobile menu should be visible at widths < 768px');
+
+    // Check if we're in mobile viewport
+    if (window.innerWidth < 768) {
+        console.log('✅ Currently in mobile viewport - hamburger should be visible');
+    } else {
+        console.log('🖥️ Currently in desktop viewport - hamburger should be hidden');
+    }
+}
+
+// Monitor viewport changes
+window.addEventListener('resize', function() {
+    console.log('Viewport resized to:', window.innerWidth);
+    if (window.innerWidth < 768) {
+        console.log('📱 Switched to mobile view');
+    } else {
+        console.log('🖥️ Switched to desktop view');
+    }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תקנון שימוש - AI Prompting לפיננסים</title>
+    <meta name="description" content="תקנון השימוש של קורס AI Prompting לפיננסים - רונן עמוס">
+
+    <!-- External Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Heebo', sans-serif;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a365d 0%, #38a169 100%);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #1a365d 0%, #38a169 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Mobile Menu Styles */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 9999;
+            padding: 0;
+        }
+
+        .mobile-menu.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .mobile-menu a {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            margin: 0.8rem 0;
+            padding: 0.8rem 1.5rem;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-align: center;
+            min-width: 180px;
+        }
+
+        .mobile-menu a:hover {
+            border-color: #38a169;
+            background: rgba(56, 161, 105, 0.1);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            z-index: 10000;
+            position: relative;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: #1a365d;
+            margin: 3px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+            background: white;
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+            background: white;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .desktop-nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Header -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <a href="landing_page_course.html" class="flex items-center">
+                    <img src="logo.jpg" alt="רונן עמוס" class="w-20 h-20 rounded-full">
+                    <h1 class="text-xl font-bold gradient-text mr-3">AI Prompting לפיננסים</h1>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav hidden md:flex">
+                <a href="landing_page_course.html" class="text-gray-600 hover:text-blue-800 transition px-4 py-2">
+                    <i class="fas fa-home ml-2"></i>חזרה לעמוד הבית
+                </a>
+            </nav>
+
+            <!-- Mobile Hamburger Menu -->
+            <div class="hamburger md:hidden" onclick="toggleMobileMenu()" aria-label="תפריט ניווט">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobileMenu" class="mobile-menu">
+    <a href="landing_page_course.html" onclick="closeMobileMenu()">עמוד הבית</a>
+    <a href="privacy.html" onclick="closeMobileMenu()">מדיניות פרטיות</a>
+
+    <!-- Close button -->
+    <div style="position: absolute; top: 20px; left: 20px; color: white; cursor: pointer; font-size: 2rem;" onclick="closeMobileMenu()">
+        ✕
+    </div>
+</div>
+
+<!-- Terms of Service Content -->
+<main class="container mx-auto px-6 py-12">
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8">
+        <h1 class="text-3xl font-bold gradient-text mb-6">תקנון שימוש</h1>
+
+        <p class="text-gray-600 mb-6">עודכן לאחרונה: 20.09.2025</p>
+
+        <section class="space-y-6 text-gray-700">
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">1. מבוא וקבלת התנאים</h2>
+                <p>ברוכים הבאים לאתר קורס AI Prompting לפיננסים. השימוש באתר ובקורס מהווה הסכמה מלאה לתנאים המפורטים בתקנון זה.</p>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">2. הגדרות</h2>
+                <ul class="list-disc list-inside mt-2 mr-4">
+                    <li><strong>"האתר"</strong> - אתר קורס AI Prompting לפיננסים</li>
+                    <li><strong>"הקורס"</strong> - כל החומרים הדיגיטליים, PDF, תבניות ותמיכה</li>
+                    <li><strong>"המשתמש"</strong> - כל מי שמשתמש באתר או רוכש את הקורס</li>
+                    <li><strong>"רונן עמוס"</strong> - בעל האתר והקורס</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">3. שירותי האתר</h2>
+                <p>האתר מספק:</p>
+                <ul class="list-disc list-inside mt-2 mr-4">
+                    <li>מידע על קורס AI Prompting לפיננסים</li>
+                    <li>מכירת חומרי הקורס בפורמט דיגיטלי</li>
+                    <li>תמיכה טכנית ומקצועית למשתמשים</li>
+                    <li>עדכונים ותוכן רלוונטי</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">4. רכישה ותשלום</h2>
+                <ul class="list-disc list-inside mt-2 mr-4">
+                    <li>כל הרכישות הן חד-פעמיות וסופיות</li>
+                    <li>התשלום מעניק רישיון שימוש אישי בלבד</li>
+                    <li>החומרים יישלחו תוך 24 שעות מאישור התשלום</li>
+                    <li>המחירים כוללים מע"ם</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">5. זכויות יוצרים ושימוש מותר</h2>
+                <p>כל החומרים באתר ובקורס מוגנים בזכויות יוצרים. השימוש המותר כולל:</p>
+                <ul class="list-disc list-inside mt-2 mr-4">
+                    <li>שימוש אישי לצורכי למידה והתפתחות מקצועית</li>
+                    <li>יישום הטכניקות בעבודה האישית</li>
+                    <li>שימוש בתבניות לצרכים עסקיים אישיים</li>
+                </ul>
+                <p class="mt-3 font-semibold text-red-600">אסור בהחלט:</p>
+                <ul class="list-disc list-inside mt-2 mr-4">
+                    <li>שיתוף, העתקה או הפצה של החומרים</li>
+                    <li>מכירה או השכרה של החומרים</li>
+                    <li>שימוש מסחרי בחומרים ללא אישור</li>
+                    <li>פרסום החומרים ברשתות חברתיות או פלטפורמות אחרות</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">6. מדיניות החזרים</h2>
+                <p>בשל האופי הדיגיטלי של המוצר:</p>
+                <ul class="list-disc list-inside mt-2 mr-4">
+                    <li>אין החזרים לאחר קבלת החומרים</li>
+                    <li>במקרה של בעיות טכניות - נפתור במהירות</li>
+                    <li>אם החומר אינו מתאים לציפיות - נציע פתרון חלופי</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">7. הגבלת אחריות</h2>
+                <p>רונן עמוס לא יישא באחריות עבור:</p>
+                <ul class="list-disc list-inside mt-2 mr-4">
+                    <li>נזקים עקיפים או תוצאתיים משימוש בחומרים</li>
+                    <li>החלטות עסקיות או השקעות המבוססות על הקורס</li>
+                    <li>תוצאות ספציפיות משימוש בטכניקות</li>
+                    <li>הפרעות או זמינות השירותים</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">8. התנהגות מקובלת</h2>
+                <p>המשתמשים מתחייבים:</p>
+                <ul class="list-disc list-inside mt-2 mr-4">
+                    <li>להשתמש בחומרים באופן חוקי ואתי</li>
+                    <li>לא לפגוע בזכויות יוצרים</li>
+                    <li>לא לנסות לפרוץ או לפגוע במערכות האתר</li>
+                    <li>להימנע מפעילות זדונית או הטרדה</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">9. פרטיות ואבטחה</h2>
+                <p>אנו מתחייבים לשמור על פרטיות המשתמשים בהתאם למדיניות הפרטיות המפורטת באתר.</p>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">10. שינויים בתקנון</h2>
+                <p>אנו שומרים את הזכות לעדכן תקנון זה. שינויים יפורסמו באתר ויכנסו לתוקף מיידית.</p>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">11. פתרון סכסוכים</h2>
+                <p>כל סכסוך יועבר לבוררות או לבתי המשפט המוסמכים בישראל.</p>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">12. צור קשר</h2>
+                <p>לשאלות או הבהרות בנושא התקנון:</p>
+                <div class="mt-3 bg-gray-100 p-4 rounded-lg">
+                    <p><strong>רונן עמוס</strong></p>
+                    <p><i class="fas fa-envelope ml-2"></i>מייל: ronenamos@gmail.com</p>
+                    <p><i class="fas fa-phone ml-2"></i>טלפון: 050-5500344</p>
+                    <p><i class="fas fa-id-card ml-2"></i>רישיון רו"ח: 039626866</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="mt-8 pt-6 border-t">
+            <a href="landing_page_course.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 transition">
+                <i class="fas fa-arrow-right ml-2"></i>
+                חזרה לעמוד הבית
+            </a>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-8 mt-12">
+    <div class="container mx-auto px-6">
+        <div class="text-center">
+            <p>&copy; 2025 AI Prompting לפיננסים - רונן עמוס. כל הזכויות שמורות.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Cookie Consent -->
+<script src="cookies.js"></script>
+
+<script>
+// Mobile Menu Functions
+function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    const hamburger = document.querySelector('.hamburger');
+
+    if (mobileMenu.classList.contains('active')) {
+        closeMobileMenu();
+    } else {
+        mobileMenu.classList.add('active');
+        hamburger.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    const hamburger = document.querySelector('.hamburger');
+
+    mobileMenu.classList.remove('active');
+    hamburger.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+// Close mobile menu when clicking outside
+document.getElementById('mobileMenu').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeMobileMenu();
+    }
+});
+
+// Close mobile menu on escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeMobileMenu();
+    }
+});
+</script>
+
+</body>
+</html>

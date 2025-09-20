@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מדיניות פרטיות - AI Prompting לפיננסים</title>
+    <meta name="description" content="מדיניות הפרטיות של קורס AI Prompting לפיננסים - רונן עמוס">
+
+    <!-- External Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Heebo', sans-serif;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a365d 0%, #38a169 100%);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #1a365d 0%, #38a169 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Mobile Menu Styles */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 9999;
+            padding: 0;
+        }
+
+        .mobile-menu.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .mobile-menu a {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            margin: 0.8rem 0;
+            padding: 0.8rem 1.5rem;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-align: center;
+            min-width: 180px;
+        }
+
+        .mobile-menu a:hover {
+            border-color: #38a169;
+            background: rgba(56, 161, 105, 0.1);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            z-index: 10000;
+            position: relative;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: #1a365d;
+            margin: 3px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+            background: white;
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+            background: white;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .desktop-nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Header -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <a href="landing_page_course.html" class="flex items-center">
+                    <img src="logo.jpg" alt="רונן עמוס" class="w-20 h-20 rounded-full">
+                    <h1 class="text-xl font-bold gradient-text mr-3">AI Prompting לפיננסים</h1>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav hidden md:flex">
+                <a href="landing_page_course.html" class="text-gray-600 hover:text-blue-800 transition px-4 py-2">
+                    <i class="fas fa-home ml-2"></i>חזרה לעמוד הבית
+                </a>
+            </nav>
+
+            <!-- Mobile Hamburger Menu -->
+            <div class="hamburger md:hidden" onclick="toggleMobileMenu()" aria-label="תפריט ניווט">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobileMenu" class="mobile-menu">
+    <a href="landing_page_course.html" onclick="closeMobileMenu()">עמוד הבית</a>
+    <a href="terms.html" onclick="closeMobileMenu()">תקנון שימוש</a>
+
+    <!-- Close button -->
+    <div style="position: absolute; top: 20px; left: 20px; color: white; cursor: pointer; font-size: 2rem;" onclick="closeMobileMenu()">
+        ✕
+    </div>
+</div>
+
+<!-- Privacy Policy Content -->
+<main class="container mx-auto px-6 py-12">
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8">
+        <h1 class="text-3xl font-bold gradient-text mb-6">מדיניות פרטיות</h1>
+
+        <p class="text-gray-600 mb-6">עודכן לאחרונה: 20.09.2025</p>
+
+        <section class="space-y-6 text-gray-700">
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">1. מבוא</h2>
+                <p>ברוכים הבאים לאתר קורס AI Prompting לפיננסים. אנו מחויבים להגן על פרטיותך ולהבטיח שהמידע האישי שלך מטופל בצורה בטוחה ומאובטחת.</p>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">2. איסוף מידע</h2>
+                <p>אנו אוספים את סוגי המידע הבאים:</p>
+                <ul class="list-disc list-inside mt-2 mr-4">
+                    <li>מידע יצירת קשר: שם, מייל, טלפון (בעת רכישת קורס)</li>
+                    <li>מידע טכני: כתובת IP, סוג דפדפן, מערכת הפעלה</li>
+                    <li>מידע שימוש: עמודים שביקרת, זמן שהייה באתר</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">3. שימוש במידע</h2>
+                <p>אנו משתמשים במידע שנאסף עבור:</p>
+                <ul class="list-disc list-inside mt-2 mr-4">
+                    <li>מתן גישה לחומרי הקורס</li>
+                    <li>מענה לשאלות ותמיכה טכנית</li>
+                    <li>שיפור חוויית המשתמש באתר</li>
+                    <li>שליחת עדכונים רלוונטיים (באישורך בלבד)</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">4. עוגיות (Cookies)</h2>
+                <p>האתר משתמש בעוגיות לצורך:</p>
+                <ul class="list-disc list-inside mt-2 mr-4">
+                    <li>שמירת העדפות המשתמש</li>
+                    <li>ניתוח ביצועי האתר</li>
+                    <li>שיפור חוויית הגלישה</li>
+                </ul>
+                <p class="mt-2">באפשרותך לנהל את העדפות העוגיות דרך הדפדפן שלך.</p>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">5. אבטחת מידע</h2>
+                <p>אנו נוקטים באמצעי אבטחה טכניים וארגוניים כדי להגן על המידע שלך:</p>
+                <ul class="list-disc list-inside mt-2 mr-4">
+                    <li>הצפנת SSL לכל העברות המידע</li>
+                    <li>גישה מוגבלת למידע אישי</li>
+                    <li>עדכוני אבטחה שוטפים</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">6. שיתוף מידע עם צדדים שלישיים</h2>
+                <p>אנו לא מוכרים או משתפים את המידע האישי שלך עם צדדים שלישיים, למעט:</p>
+                <ul class="list-disc list-inside mt-2 mr-4">
+                    <li>ספקי שירות חיוניים (אחסון, עיבוד תשלומים)</li>
+                    <li>דרישות חוקיות</li>
+                    <li>באישורך המפורש</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">7. זכויותיך</h2>
+                <p>בהתאם לחוק הגנת הפרטיות, יש לך זכות:</p>
+                <ul class="list-disc list-inside mt-2 mr-4">
+                    <li>לעיין במידע האישי שלך</li>
+                    <li>לבקש תיקון מידע שגוי</li>
+                    <li>לבקש מחיקת מידע</li>
+                    <li>להתנגד לשימושים מסוימים</li>
+                    <li>לקבל את המידע שלך בפורמט דיגיטלי</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">8. ילדים</h2>
+                <p>האתר והקורס מיועדים לבגירים מעל גיל 18. אנו לא אוספים מידע מילדים מתחת לגיל זה באופן יודעני.</p>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">9. שינויים במדיניות</h2>
+                <p>אנו שומרים את הזכות לעדכן מדיניות זו מעת לעת. שינויים מהותיים יפורסמו באתר עם הודעה מתאימה.</p>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-3">10. צור קשר</h2>
+                <p>לשאלות או בקשות בנושא פרטיות, ניתן ליצור קשר:</p>
+                <div class="mt-3 bg-gray-100 p-4 rounded-lg">
+                    <p><strong>רונן עמוס</strong></p>
+                    <p><i class="fas fa-envelope ml-2"></i>מייל: ronenamos@gmail.com</p>
+                    <p><i class="fas fa-phone ml-2"></i>טלפון: 050-5500344</p>
+                    <p><i class="fas fa-id-card ml-2"></i>רישיון רו"ח: 039626866</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="mt-8 pt-6 border-t">
+            <a href="landing_page_course.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 transition">
+                <i class="fas fa-arrow-right ml-2"></i>
+                חזרה לעמוד הבית
+            </a>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-8 mt-12">
+    <div class="container mx-auto px-6">
+        <div class="text-center">
+            <p>&copy; 2025 AI Prompting לפיננסים - רונן עמוס. כל הזכויות שמורות.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Cookie Consent -->
+<script src="cookies.js"></script>
+
+<script>
+// Mobile Menu Functions
+function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    const hamburger = document.querySelector('.hamburger');
+
+    if (mobileMenu.classList.contains('active')) {
+        closeMobileMenu();
+    } else {
+        mobileMenu.classList.add('active');
+        hamburger.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeMobileMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    const hamburger = document.querySelector('.hamburger');
+
+    mobileMenu.classList.remove('active');
+    hamburger.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+// Close mobile menu when clicking outside
+document.getElementById('mobileMenu').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeMobileMenu();
+    }
+});
+
+// Close mobile menu on escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeMobileMenu();
+    }
+});
+</script>
+
+</body>
+</html>
