@@ -110,9 +110,7 @@
 - **ציות ל-GDPR** - מדיניות פרטיות מלאה
 - **מעקב אחר הסכמות** - שמירה מקומית של העדפות המשתמש
 
-### 📱 SEO ושיתוף
-- **Open Graph Tags** - תצוגה מיטבית ברשתות חברתיות
-- **Twitter Cards** - שיתוף מעוצב בטוויטר
+
 - **מטה טאגים מותאמים** - אופטימיזציה למנועי חיפוש
 - **Schema Markup** - מובנה לקריאה טובה יותר של מנועי חיפוש
 
@@ -133,22 +131,7 @@
 └── test_*.html               # קבצי בדיקה ופיתוח
 ```
 
-## 🔧 הוראות הפעלה מקומית
-
-1. **שכפול הרפוזיטורי:**
-   ```bash
-   git clone https://github.com/ronenamos-arch/AmosAICourses.git
-   ```
-
-2. **פתיחת האתר:**
-   - פתח את הקובץ `landing_page_course.html` בדפדפן
-   - או השתמש בשרת מקומי פשוט
-
-3. **בדיקת תכונות:**
-   - `test_mobile_menu.html` - בדיקת תפריט המבורגר
-   - `test_navigation.html` - בדיקת כל הקישורים
-   - `test_cookies.html` - בדיקת מערכת העוגיות
-   - `test_testimonials.html` - בדיקת מערך ההמלצות
+##
 
 ## 📞 יצירת קשר
 
@@ -157,7 +140,7 @@
 - 📱 **טלפון:** 050-5500344
 - 🌐 **אתר אישי:** [Amos Financial Solutions](https://tinyurl.com/Amos-Financial-Solutions)
 - 💼 **LinkedIn:** [ronenamoscpa](https://www.linkedin.com/in/ronenamoscpa/)
-- 🆔 **רישיון רו"ח:** 039626866
+- 🆔 **רישיון רו"ח:** 
 
 ## 📄 רישיון
 
@@ -166,4 +149,5 @@
 ---
 
 **🚀 מוכן להתחיל את המסע שלך עם AI בפיננסים?**
+
 [👆 לרכישת הקורס](https://ronenamos-arch.github.io/AmosAICourses/landing_page_course.html#pricing)
