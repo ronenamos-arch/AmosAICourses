@@ -1,0 +1,22 @@
+# Robots.txt for AmosAICourses
+# Allow all search engines to crawl the site
+
+User-agent: *
+
+# Allow main pages
+Allow: /
+Allow: /index.html
+Allow: /index-en.html
+Allow: /landing_page_course.html
+Allow: /privacy.html
+Allow: /terms.html
+
+# Disallow test pages
+Disallow: /test_*.html
+Disallow: /test_cookies.html
+Disallow: /test_mobile_menu.html
+Disallow: /test_navigation.html
+Disallow: /test_testimonials.html
+
+# Sitemap location
+Sitemap: https://ronenamos-arch.github.io/AmosAICourses/sitemap.xml
