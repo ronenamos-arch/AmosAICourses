@@ -10,6 +10,8 @@ Allow: /index-en.html
 Allow: /landing_page_course.html
 Allow: /privacy.html
 Allow: /terms.html
+Allow: /press.html
+Allow: /free-prompts.html
 
 # Disallow test pages
 Disallow: /test_*.html

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50 Prompts חינמיים לפיננסים | רונן עמוס</title>
+    <meta name="description" content="הורד חינם 50 Prompts מוכנים לשימוש לרואי חשבון ואנשי פיננסים. כלים מעשיים לעבודה עם ChatGPT ו-AI.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ronenamos-arch.github.io/AmosAICourses/free-prompts.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="50 Prompts חינמיים לפיננסים">
+    <meta property="og:description" content="הורד חינם 50 Prompts מוכנים לשימוש לרואי חשבון ואנשי פיננסים">
+    <meta property="og:image" content="https://ronenamos-arch.github.io/AmosAICourses/logo.jpg">
+    <meta property="og:url" content="https://ronenamos-arch.github.io/AmosAICourses/free-prompts.html">
+
+    <!-- External Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Heebo', sans-serif;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a365d 0%, #38a169 100%);
+        }
+
+        .prompt-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .prompt-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .prompt-title {
+            color: #1a365d;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .prompt-text {
+            background: #f8f9fa;
+            padding: 15px;
+            border-right: 3px solid #38a169;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            margin: 10px 0;
+            direction: ltr;
+            text-align: left;
+        }
+
+        .category-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin: 5px;
+            font-weight: bold;
+        }
+
+        .cat-accounting {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+
+        .cat-analysis {
+            background: #f3e5f5;
+            color: #7b1fa2;
+        }
+
+        .cat-reporting {
+            background: #e8f5e9;
+            color: #388e3c;
+        }
+
+        .cat-automation {
+            background: #fff3e0;
+            color: #f57c00;
+        }
+
+        .download-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .download-btn {
+            background: white;
+            color: #764ba2;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .copy-btn {
+            background: #38a169;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+        }
+
+        .copy-btn:hover {
+            background: #2f855a;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-4">🎁 50 Prompts חינמיים לפיננסים</h1>
+            <p class="text-2xl mb-4">כלים מוכנים לשימוש מיידי עם ChatGPT</p>
+            <p class="text-lg">מתנה מרונן עמוס - מומחה AI בפיננסים</p>
+            <a href="index.html" class="mt-4 inline-block text-white hover:underline">← חזרה לדף הבית</a>
+        </div>
+    </header>
+
+    <!-- Download Section -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="download-box">
+            <i class="fas fa-gift text-6xl mb-4"></i>
+            <h2 class="text-3xl font-bold mb-4">הורד את המדריך המלא - חינם!</h2>
+            <p class="text-xl mb-2">קובץ PDF עם 50 Prompts מוכנים לשימוש</p>
+            <p class="text-lg mb-4">+ הסברים מפורטים ודוגמאות שימוש</p>
+            <a href="#contact-form" class="download-btn">
+                <i class="fas fa-download mr-2"></i>
+                הורד עכשיו (חינם)
+            </a>
+            <p class="text-sm mt-4 opacity-75">ללא צורך ברישום | הורדה מיידית</p>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="container mx-auto px-4 py-8">
+        <div class="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-4 text-center">💡 מה תמצא כאן?</h2>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                אוסף מקיף של 50 Prompts מקצועיים שפותחו במיוחד לאנשי פיננסים, רואי חשבון ומנהלי כספים.
+                כל Prompt נבדק בפועל ומותאם לעבודה יומיומית עם ChatGPT וכלי AI אחרים.
+            </p>
+            <div class="grid md:grid-cols-4 gap-4 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-blue-600">50</div>
+                    <p class="text-gray-600">Prompts מוכנים</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-green-600">10</div>
+                    <p class="text-gray-600">קטגוריות שונות</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-purple-600">100%</div>
+                    <p class="text-gray-600">חינמי</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-orange-600">24/7</div>
+                    <p class="text-gray-600">זמין תמיד</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Prompts -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-8 text-center">📝 דוגמאות Prompts (10 מתוך 50)</h2>
+
+        <!-- Category: Accounting -->
+        <h3 class="text-2xl font-bold mb-4"><span class="category-badge cat-accounting">חשבונאות</span></h3>
+
+        <div class="prompt-card">
+            <div class="flex justify-between items-start">
+                <div class="flex-1">
+                    <div class="prompt-title">1. ניתוח חריגות בדוח רווח והפסד</div>
+                    <p class="text-gray-600 mb-3">בדוק חריגות והבדלים משמעותיים בין תקופות</p>
+                </div>
+                <button class="copy-btn" onclick="copyPrompt(1)">
+                    <i class="fas fa-copy"></i> העתק
+                </button>
+            </div>
+            <div class="prompt-text" id="prompt-1">
+Analyze the following P&L statement and identify significant variances compared to the previous period. For each variance over 10%, provide: 1) The percentage change, 2) Possible business reasons, 3) Recommended actions.
+
+[Insert your P&L data here]
+            </div>
+            <p class="text-sm text-gray-500 mt-2">📌 טיפ: החלף את [Insert your P&L data here] בנתונים שלך</p>
+        </div>
+
+        <div class="prompt-card">
+            <div class="flex justify-between items-start">
+                <div class="flex-1">
+                    <div class="prompt-title">2. יצירת הנחיות חשבונאיות</div>
+                    <p class="text-gray-600 mb-3">צור מדיניות חשבונאית לטיפול בעסקאות מורכבות</p>
+                </div>
+                <button class="copy-btn" onclick="copyPrompt(2)">
+                    <i class="fas fa-copy"></i> העתק
+                </button>
+            </div>
+            <div class="prompt-text" id="prompt-2">
+Create accounting policy guidelines for [specific transaction type, e.g., "revenue recognition for SaaS subscriptions"]. Include: 1) Relevant accounting standards (IFRS/GAAP), 2) Step-by-step recording process, 3) Journal entry examples, 4) Common pitfalls to avoid.
+            </div>
+        </div>
+
+        <!-- Category: Financial Analysis -->
+        <h3 class="text-2xl font-bold mb-4 mt-8"><span class="category-badge cat-analysis">ניתוח פיננסי</span></h3>
+
+        <div class="prompt-card">
+            <div class="flex justify-between items-start">
+                <div class="flex-1">
+                    <div class="prompt-title">3. חישוב ופירוש יחסים פיננסיים</div>
+                    <p class="text-gray-600 mb-3">נתח את הבריאות הפיננסית של החברה</p>
+                </div>
+                <button class="copy-btn" onclick="copyPrompt(3)">
+                    <i class="fas fa-copy"></i> העתק
+                </button>
+            </div>
+            <div class="prompt-text" id="prompt-3">
+Calculate and interpret the following financial ratios based on the data provided: 1) Liquidity ratios (Current, Quick), 2) Profitability ratios (ROE, ROA, Net Margin), 3) Leverage ratios (Debt-to-Equity). Provide industry benchmarks and actionable insights.
+
+Revenue: [amount]
+Total Assets: [amount]
+Current Assets: [amount]
+Current Liabilities: [amount]
+Total Equity: [amount]
+Net Income: [amount]
+            </div>
+        </div>
+
+        <div class="prompt-card">
+            <div class="flex justify-between items-start">
+                <div class="flex-1">
+                    <div class="prompt-title">4. בניית מודל תחזית תזרים מזומנים</div>
+                    <p class="text-gray-600 mb-3">צור תחזית Cash Flow ל-12 חודשים</p>
+                </div>
+                <button class="copy-btn" onclick="copyPrompt(4)">
+                    <i class="fas fa-copy"></i> העתק
+                </button>
+            </div>
+            <div class="prompt-text" id="prompt-4">
+Create a 12-month cash flow forecast template for a [type of business] with the following assumptions: Monthly revenue: [amount], Growth rate: [%], Operating expenses: [amount], Payment terms: [days]. Include sensitivity analysis for different scenarios.
+            </div>
+        </div>
+
+        <!-- Category: Reporting -->
+        <h3 class="text-2xl font-bold mb-4 mt-8"><span class="category-badge cat-reporting">דוחות וביאורים</span></h3>
+
+        <div class="prompt-card">
+            <div class="flex justify-between items-start">
+                <div class="flex-1">
+                    <div class="prompt-title">5. סיכום ניהולי (Executive Summary)</div>
+                    <p class="text-gray-600 mb-3">הפוך נתונים פיננסיים לתובנות עסקיות</p>
+                </div>
+                <button class="copy-btn" onclick="copyPrompt(5)">
+                    <i class="fas fa-copy"></i> העתק
+                </button>
+            </div>
+            <div class="prompt-text" id="prompt-5">
+Write an executive summary of the following financial data for management. Use simple business language, highlight key trends, identify risks and opportunities, and provide 3-5 actionable recommendations.
+
+[Insert financial data and key metrics here]
+            </div>
+        </div>
+
+        <div class="prompt-card">
+            <div class="flex justify-between items-start">
+                <div class="flex-1">
+                    <div class="prompt-title">6. ביאורים לדוחות כספיים</div>
+                    <p class="text-gray-600 mb-3">כתוב ביאורים ברורים ומקצועיים</p>
+                </div>
+                <button class="copy-btn" onclick="copyPrompt(6)">
+                    <i class="fas fa-copy"></i> העתק
+                </button>
+            </div>
+            <div class="prompt-text" id="prompt-6">
+Draft footnotes for financial statements explaining [specific item, e.g., "significant accounting policies for inventory valuation"]. Follow IFRS/GAAP disclosure requirements and include all necessary details for stakeholders.
+            </div>
+        </div>
+
+        <!-- Category: Automation -->
+        <h3 class="text-2xl font-bold mb-4 mt-8"><span class="category-badge cat-automation">אוטומציה</span></h3>
+
+        <div class="prompt-card">
+            <div class="flex justify-between items-start">
+                <div class="flex-1">
+                    <div class="prompt-title">7. יצירת נוסחאות Excel מורכבות</div>
+                    <p class="text-gray-600 mb-3">קבל עזרה בבניית נוסחאות מתקדמות</p>
+                </div>
+                <button class="copy-btn" onclick="copyPrompt(7)">
+                    <i class="fas fa-copy"></i> העתק
+                </button>
+            </div>
+            <div class="prompt-text" id="prompt-7">
+Create an Excel formula that [describe your need, e.g., "calculates weighted average cost of inventory with multiple price tiers"]. Explain the logic step-by-step and provide examples with sample data.
+            </div>
+        </div>
+
+        <div class="prompt-card">
+            <div class="flex justify-between items-start">
+                <div class="flex-1">
+                    <div class="prompt-title">8. Template לאוטומציית משימות חוזרות</div>
+                    <p class="text-gray-600 mb-3">בנה תהליך סטנדרטי למשימות חודשיות</p>
+                </div>
+                <button class="copy-btn" onclick="copyPrompt(8)">
+                    <i class="fas fa-copy"></i> העתק
+                </button>
+            </div>
+            <div class="prompt-text" id="prompt-8">
+Create a checklist template for monthly closing procedures including: 1) All required tasks in chronological order, 2) Person responsible, 3) Estimated time, 4) Dependencies, 5) Quality checks.
+            </div>
+        </div>
+
+        <!-- Category: Budget & Forecasting -->
+        <h3 class="text-2xl font-bold mb-4 mt-8"><span class="category-badge cat-analysis">תקציב ותחזיות</span></h3>
+
+        <div class="prompt-card">
+            <div class="flex justify-between items-start">
+                <div class="flex-1">
+                    <div class="prompt-title">9. ניתוח סטיות תקציב</div>
+                    <p class="text-gray-600 mb-3">הסבר הבדלים בין תקציב למצב בפועל</p>
+                </div>
+                <button class="copy-btn" onclick="copyPrompt(9)">
+                    <i class="fas fa-copy"></i> העתק
+                </button>
+            </div>
+            <div class="prompt-text" id="prompt-9">
+Analyze budget vs. actual variances for [period]. For each line item with >5% variance, explain: 1) Root cause (volume, price, efficiency), 2) Is it favorable/unfavorable? 3) Is it temporary or structural? 4) Management actions needed.
+
+Budget: [amounts]
+Actual: [amounts]
+            </div>
+        </div>
+
+        <div class="prompt-card">
+            <div class="flex justify-between items-start">
+                <div class="flex-1">
+                    <div class="prompt-title">10. תחזית מכירות מבוססת נתונים</div>
+                    <p class="text-gray-600 mb-3">צור תחזית עם ניתוח טרנדים</p>
+                </div>
+                <button class="copy-btn" onclick="copyPrompt(10)">
+                    <i class="fas fa-copy"></i> העתק
+                </button>
+            </div>
+            <div class="prompt-text" id="prompt-10">
+Based on historical sales data, create a sales forecast for the next [X months]. Consider: 1) Seasonality patterns, 2) Growth trends, 3) Market conditions, 4) Known upcoming events. Provide three scenarios: conservative, base case, optimistic.
+
+Historical data:
+[Insert sales data]
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Full List Teaser -->
+    <section class="bg-blue-50 py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">🎯 40 Prompts נוספים מחכים לך!</h2>
+            <p class="text-xl mb-4">קטגוריות נוספות במדריך המלא:</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto mb-8">
+                <div class="bg-white p-4 rounded-lg shadow">✅ Tax Planning & Compliance</div>
+                <div class="bg-white p-4 rounded-lg shadow">✅ Audit & Internal Controls</div>
+                <div class="bg-white p-4 rounded-lg shadow">✅ Cost Accounting</div>
+                <div class="bg-white p-4 rounded-lg shadow">✅ Financial Modeling</div>
+                <div class="bg-white p-4 rounded-lg shadow">✅ Client Communication</div>
+                <div class="bg-white p-4 rounded-lg shadow">✅ Data Analysis & Visualization</div>
+            </div>
+            <a href="#contact-form" class="download-btn inline-block">
+                <i class="fas fa-download mr-2"></i>
+                הורד את המדריך המלא
+            </a>
+        </div>
+    </section>
+
+    <!-- How to Use -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-center">📖 איך להשתמש ב-Prompts?</h2>
+            <div class="space-y-6">
+                <div class="flex items-start">
+                    <div class="bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold ml-4 flex-shrink-0">1</div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">בחר Prompt רלוונטי</h3>
+                        <p class="text-gray-700">מצא את ה-Prompt המתאים למשימה שלך מהקטגוריה הרלוונטית</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold ml-4 flex-shrink-0">2</div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">התאם לנתונים שלך</h3>
+                        <p class="text-gray-700">החלף את הסוגריים המרובעים [...] בנתונים הספציפיים שלך</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold ml-4 flex-shrink-0">3</div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">העתק ל-ChatGPT</h3>
+                        <p class="text-gray-700">לחץ על כפתור "העתק" והדבק את ה-Prompt ב-ChatGPT</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold ml-4 flex-shrink-0">4</div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">שפר ודייק</h3>
+                        <p class="text-gray-700">אם התוצאה לא מושלמת, בקש מ-ChatGPT לדייק או להרחיב</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact-form" class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">🎁 הורד את ה-50 Prompts - חינם!</h2>
+            <p class="text-xl mb-8">קובץ PDF מלא עם כל ה-Prompts + הסברים והדגמות</p>
+
+            <div class="bg-white text-gray-800 rounded-lg p-8 max-w-md mx-auto">
+                <form class="space-y-4">
+                    <input type="text" placeholder="שם מלא" class="w-full p-3 border rounded-lg text-right" required>
+                    <input type="email" placeholder="אימייל" class="w-full p-3 border rounded-lg text-right" required>
+                    <input type="text" placeholder="תפקיד (רו״ח, CFO, וכו')" class="w-full p-3 border rounded-lg text-right">
+                    <button type="submit" class="w-full bg-green-600 text-white py-3 rounded-lg font-bold hover:bg-green-700 transition">
+                        <i class="fas fa-download mr-2"></i>
+                        שלח לי את הקובץ
+                    </button>
+                </form>
+                <p class="text-sm text-gray-600 mt-4">
+                    <i class="fas fa-lock"></i> לא נשלח ספאם. המייל שלך מאובטח.
+                </p>
+            </div>
+
+            <p class="mt-8 text-lg">
+                או התקשר/שלח WhatsApp: <a href="tel:0505500344" class="font-bold hover:underline">050-5500344</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- About Ronen -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto text-center">
+            <img src="avatar.jpg" alt="רונן עמוס" class="w-32 h-32 rounded-full mx-auto mb-4">
+            <h2 class="text-2xl font-bold mb-2">רונן עמוס</h2>
+            <p class="text-gray-600 mb-4">רו״ח מוסמך | מומחה AI בפיננסים</p>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                +10 שנות ניסיון בפיננסים וטכנולוגיה. מרצה קורס "AI Prompting לפיננסים" ומסייע למאות אנשי מקצוע
+                לשלב AI בעבודתם היומיומית ולחסוך עשרות שעות עבודה בחודש.
+            </p>
+            <a href="index.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+                למד עוד על הקורס המלא
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">© 2025 רונן עמוס - כל הזכויות שמורות</p>
+            <div class="space-x-4 space-x-reverse">
+                <a href="index.html" class="hover:underline">דף הבית</a>
+                <a href="press.html" class="hover:underline">ערכת מדיה</a>
+                <a href="privacy.html" class="hover:underline">מדיניות פרטיות</a>
+                <a href="terms.html" class="hover:underline">תנאי שימוש</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function copyPrompt(number) {
+            const promptText = document.getElementById('prompt-' + number).innerText;
+            navigator.clipboard.writeText(promptText).then(() => {
+                alert('הPrompt הועתק ללוח! 📋');
+            });
+        }
+    </script>
+
+</body>
+</html>
