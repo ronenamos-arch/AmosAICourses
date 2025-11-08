@@ -1,0 +1,28 @@
+# AI Prompting לפיננסים - AI Courses for Finance Professionals
+
+## About
+Professional AI prompting course designed for accountants and finance professionals in Israel.
+Instructor: Ronen Amos (CPA, AI Expert, 10+ years experience)
+Contact: ronenamos@gmail.com
+
+## Main Page
+
+https://ronenamos-arch.github.io/AmosAICourses/
+
+## Course Content
+
+9 professional modules covering:
+- Module 1: Introduction to Generative AI in Finance
+- Module 2: Financial Terminology for Effective AI Communication
+- Module 3: Automating Financial Reporting
+- Module 4: Financial Analysis and Forecasting
+- Module 5: Generating Business Insights
+- Module 6: Customer Communication
+- Module 7: Financial Education and Training
+- Module 8: Security and Privacy in AI Usage
+- Module 9: Ethics and Responsibility in AI
+
+## Legal
+
+https://ronenamos-arch.github.io/AmosAICourses/privacy.html
+https://ronenamos-arch.github.io/AmosAICourses/terms.html
